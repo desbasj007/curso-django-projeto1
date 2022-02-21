@@ -1,6 +1,3 @@
-from unicodedata import name
-
-from django.http import HttpResponse
 from django.shortcuts import render
 
 
@@ -10,15 +7,3 @@ def home(request):
         'name': 'Josaphat DESBAS',
 
     })
-
-
-def contato(request):
-    return render(request, 'me-apague/temp.html')
-
-
-def sobre(request):
-    return HttpResponse('sobre')
-
-
-def musta(request):
-    return HttpResponse('Musta')

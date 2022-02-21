@@ -1,6 +1,6 @@
 from django.urls import path
 
-from recipes.views import contato, home, musta, sobre
+from recipes.views import home
 
 # HTTP REQUEST
 
@@ -8,7 +8,5 @@ from recipes.views import contato, home, musta, sobre
 urlpatterns = [
 
     path('', home),  # Home
-    path('sobre/', sobre),  # /sobre/
-    path('contato/', contato),  # /contatp/
-    path('musta/', musta),
+
 ]
