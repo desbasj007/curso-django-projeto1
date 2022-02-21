@@ -1,15 +1,19 @@
-from django.http import HttpResponse
+from unicodedata import name
 
-#from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render
 
 
 # Create your views here.
 def home(request):
-    return HttpResponse('HOME 1')
+    return render(request, 'recipes/home.html', context={
+        'name': 'Josaphat DESBAS',
+
+    })
 
 
 def contato(request):
-    return HttpResponse('contato')
+    return render(request, 'me-apague/temp.html')
 
 
 def sobre(request):
