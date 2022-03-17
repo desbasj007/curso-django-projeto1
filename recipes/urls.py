@@ -1,12 +1,14 @@
 from django.urls import path
 
-from recipes.views import home
+from . import views
 
 # HTTP REQUEST
 
 
 urlpatterns = [
 
-    path('', home),  # Home
+    path('', views.home),  # Home
+    path('recipes/<id>/', views.recipe),  # Home
+
 
 ]
